@@ -1,5 +1,5 @@
 project "spdlog"
-	kind "StaticLib"
+	kind "SharedLib"
 	language "C++"
 	cppdialect "C++17"
 	staticruntime "off"
@@ -19,9 +19,9 @@ project "spdlog"
 	}
 
 	defines
-	{
-		"SPDLOG_COMPILED_LIB"
-	}
+    {
+        "SPDLOG_COMPILED_LIB"
+    }
 
 	filter "configurations:Debug"
 		defines "DEBUG"
